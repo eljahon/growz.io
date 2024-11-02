@@ -3,6 +3,7 @@
     "/[locale]/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
+      "static/css/app/[locale]/page.css",
       "static/chunks/app/[locale]/page.js"
     ],
     "/[locale]/layout": [

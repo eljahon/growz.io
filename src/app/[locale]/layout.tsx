@@ -5,7 +5,6 @@ import { NextIntlClientProvider, useMessages } from "next-intl";
 import { Providers } from "@/providers";
 import { BaseLayout } from "@/components";
 import { IChildren, IParams } from "@/types";
-import { logoIcon, logoImg } from "@/constants";
 
 import "@/styles/globals.scss";
 
@@ -17,7 +16,7 @@ interface IRootLayout extends IChildren {
 
 export default function RootLayout({
   children,
-  params: { locale }
+  params: { locale },
 }: Readonly<IRootLayout>) {
   const messages = useMessages();
 
@@ -28,16 +27,12 @@ export default function RootLayout({
           name="viewport"
           content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
         />
-        
-        
-      
-        
+
         <meta property="og:image:type" content="image/jpeg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:type" content="website" />
-        
-        
+
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="robots" content="index, follow, max-image-preview:large" />
         <meta name="theme-color" content="#ffffff" />
@@ -45,9 +40,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Providers>
-            <BaseLayout>
-              {children}
-            </BaseLayout>
+            <BaseLayout>{children}</BaseLayout>
           </Providers>
         </NextIntlClientProvider>
         <Script id="facebook-pixel" strategy="afterInteractive">

@@ -11,6 +11,7 @@
 	"dependencies": {
 		"@fancyapps/ui": "^5.0.36",
 		"@nextui-org/react": "^2.4.8",
+		"aos": "^3.0.0-beta.6",
 		"framer-motion": "^11.11.1",
 		"html-react-parser": "^5.1.17",
 		"libphonenumber-js": "^1.11.11",
@@ -24,6 +25,7 @@
 		"sharp": "^0.33.5"
 	},
 	"devDependencies": {
+		"@types/aos": "^3.0.7",
 		"@types/node": "^22",
 		"@types/react": "^18",
 		"@types/react-dom": "^18",

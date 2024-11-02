@@ -51,7 +51,7 @@ button:disabled {
 
 .custom-height {
   min-height: calc(100vh - 114px);
-  padding-bottom: 60px;
+  padding-bottom: 20px;
   @include mixin.media(640px) {
     padding-bottom: 75px;
     min-height: calc(100vh - 210px);
