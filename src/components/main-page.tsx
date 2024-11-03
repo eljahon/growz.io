@@ -31,6 +31,9 @@ export const MainPage = () => {
   const [activeLang, setActiveLang] = useState("En");
 
   const languages = ["En", "Ru", "Uz"];
+  const scrollBehavior = function () {
+    document.getElementById("about")?.scrollIntoView({ behavior: "smooth" })
+  };
   const socialMedia = [
     {
       icon: Instagram,
@@ -50,7 +53,7 @@ export const MainPage = () => {
     AOS.init();
   }, []);
   return (
-    <div>
+    <div className="scroll-smooth">
       <section>
         <div className="relative">
           <span
@@ -82,7 +85,7 @@ export const MainPage = () => {
             width={193}
             height={138}
           />
-          <button className="w-[48px] mx-auto h-[48px] block rounded-full bg-[#cce2d3] mt-[24px]">
+          <button onClick={scrollBehavior} className="w-[48px] mx-auto h-[48px] block rounded-full bg-[#cce2d3] mt-[24px]">
             <Image className="ml-[13px]" src={BottomArrow} alt="arrow" />
           </button>
         </div>
@@ -132,7 +135,7 @@ export const MainPage = () => {
         </div>
       </section>
 
-      <section className="mt-[320px] lg:mt-[400px] container">
+      <section className="mt-[320px] lg:mt-[400px] container" id="about">
         <div className="flex items-center">
           <Image
             src={GrowzLogo}
@@ -157,7 +160,7 @@ export const MainPage = () => {
           </div>
         </div>
 
-        <div className="flex items-center gap-x-[100px] mt-[77px] pb-9">
+        <div className="flex items-center justify-center gap-x-[100px] mt-[77px] pb-9">
           <div className="max-w-[660px] mx-auto lg:m-0 mt-[28px]">
             <h3 className="text-Clr007E font-bold text-[19px] lg:text-[30px] text-center">
               The website is under construction
@@ -181,14 +184,15 @@ export const MainPage = () => {
               <Image src={QRCode} alt={"QR"} />
             </div>
           </div>
-          <div className="flex items-center lg:hidden justify-center gap-x-[24px] mt-[45px]">
-            {socialMedia.map((item) => (
-              <button>
+          
+        </div>
+        <div className="flex items-center justify-center gap-x-[24px] mt-[249px] mb-[100px]">
+            {socialMedia.map((item,index ) => (
+              <button key={item.icon}>
                 <Image src={item.icon} alt={"icon"} />
               </button>
             ))}
           </div>
-        </div>
       </section>
     </div>
   );

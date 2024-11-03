@@ -1,4 +1,4 @@
-// File: C:\Users\HP\Desktop\growz.io\src\app\[locale]\page.tsx
+// File: /Users/Apple/Projects/Calypso/frontend/growz.io/src/app/[locale]/page.tsx
 import * as entry from '../../../../src/app/[locale]/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
