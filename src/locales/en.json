@@ -1,3 +1,10 @@
 {
-  "greeting": "Энглиш"
+  "greeting": "Энглиш",
+  "title": "The website is under construction",
+  "text": "We’re working hard to make this website available again. You can learn more about Growz from the presentation You will find a new design",
+  "presentation": "Presentation",
+  "day": "Day",
+  "hour": "Hour",
+  "minute": "Minute",
+  "second": "Second"
 }

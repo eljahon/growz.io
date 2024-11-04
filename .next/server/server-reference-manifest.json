@@ -1,24 +1,24 @@
 {
   "node": {
-    "9b51940e268150972fb74a74adeda8c27ac06c3c": {
+    "03e072d80f58944f69b2cb5697a4cd46531acab6": {
       "workers": {
-        "app/[locale]/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2FApple%2FProjects%2FCalypso%2Ffrontend%2Fgrowz.io%2Fsrc%2Fapp%2F%5Blocale%5D%2Fpage.tsx%22%2C%5B%22default%22%5D%5D%2C%5B%22%2FUsers%2FApple%2FProjects%2FCalypso%2Ffrontend%2Fgrowz.io%2Fsrc%2Fcomponents%2Flayout%2Findex.tsx%22%2C%5B%22%24%24ACTION_0%22%2C%22BaseLayout%22%5D%5D%5D&__client_imported__=!"
+        "app/[locale]/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CHP%5C%5CDesktop%5C%5Cgrowz.io%5C%5Csrc%5C%5Capp%5C%5C%5Blocale%5D%5C%5Cpage.tsx%22%2C%5B%22default%22%5D%5D%2C%5B%22C%3A%5C%5CUsers%5C%5CHP%5C%5CDesktop%5C%5Cgrowz.io%5C%5Csrc%5C%5Ccomponents%5C%5Clayout%5C%5Cindex.tsx%22%2C%5B%22BaseLayout%22%2C%22%24%24ACTION_0%22%5D%5D%5D&__client_imported__=!"
       },
       "layer": {
         "app/[locale]/page": "rsc"
       }
     },
-    "3231449bba184c83240df262f572ff8ce9566141": {
+    "0b69cc0c22f0e5afafefaa347f5984c343b8f43b": {
       "workers": {
-        "app/[locale]/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2FApple%2FProjects%2FCalypso%2Ffrontend%2Fgrowz.io%2Fsrc%2Fapp%2F%5Blocale%5D%2Fpage.tsx%22%2C%5B%22default%22%5D%5D%2C%5B%22%2FUsers%2FApple%2FProjects%2FCalypso%2Ffrontend%2Fgrowz.io%2Fsrc%2Fcomponents%2Flayout%2Findex.tsx%22%2C%5B%22%24%24ACTION_0%22%2C%22BaseLayout%22%5D%5D%5D&__client_imported__=!"
+        "app/[locale]/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CHP%5C%5CDesktop%5C%5Cgrowz.io%5C%5Csrc%5C%5Capp%5C%5C%5Blocale%5D%5C%5Cpage.tsx%22%2C%5B%22default%22%5D%5D%2C%5B%22C%3A%5C%5CUsers%5C%5CHP%5C%5CDesktop%5C%5Cgrowz.io%5C%5Csrc%5C%5Ccomponents%5C%5Clayout%5C%5Cindex.tsx%22%2C%5B%22BaseLayout%22%2C%22%24%24ACTION_0%22%5D%5D%5D&__client_imported__=!"
       },
       "layer": {
         "app/[locale]/page": "rsc"
       }
     },
-    "bab23e7bd0a5208da8c66ccbb0c5f1beed15de55": {
+    "7a614f52151b24622edb1fe4f30ec2578e249b0f": {
       "workers": {
-        "app/[locale]/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2FApple%2FProjects%2FCalypso%2Ffrontend%2Fgrowz.io%2Fsrc%2Fapp%2F%5Blocale%5D%2Fpage.tsx%22%2C%5B%22default%22%5D%5D%2C%5B%22%2FUsers%2FApple%2FProjects%2FCalypso%2Ffrontend%2Fgrowz.io%2Fsrc%2Fcomponents%2Flayout%2Findex.tsx%22%2C%5B%22%24%24ACTION_0%22%2C%22BaseLayout%22%5D%5D%5D&__client_imported__=!"
+        "app/[locale]/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CHP%5C%5CDesktop%5C%5Cgrowz.io%5C%5Csrc%5C%5Capp%5C%5C%5Blocale%5D%5C%5Cpage.tsx%22%2C%5B%22default%22%5D%5D%2C%5B%22C%3A%5C%5CUsers%5C%5CHP%5C%5CDesktop%5C%5Cgrowz.io%5C%5Csrc%5C%5Ccomponents%5C%5Clayout%5C%5Cindex.tsx%22%2C%5B%22BaseLayout%22%2C%22%24%24ACTION_0%22%5D%5D%5D&__client_imported__=!"
       },
       "layer": {
         "app/[locale]/page": "rsc"
@@ -26,5 +26,5 @@
     }
   },
   "edge": {},
-  "encryptionKey": "N67V8MAt9N/Uvd61F1lDuCsxczRUrpLNbHd5ezzweno="
+  "encryptionKey": "Wqr7AU7SxNOX9dvfZKgIi+Plp8u0xaUzwUie4tQ5HnE="
 }

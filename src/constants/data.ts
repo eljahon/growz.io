@@ -24,46 +24,60 @@ import {
   homeFilledIcon,
   doubleCheckIcon,
   heartFilledIcon,
-  catalogFilledIcon, bannerSixImg, bannerSevenImg,
+  catalogFilledIcon,
+  bannerSixImg,
+  bannerSevenImg,
 } from "@/constants";
-import {TProvider} from "@/types/payment";
-import {StaticImageData} from "next/image";
-import {ISelectData, ILink, TLocale, INavLink, TProductType, IAdditionalInfo} from "@/types";
+import { TProvider } from "@/types/payment";
+import { StaticImageData } from "next/image";
+import {
+  ISelectData,
+  ILink,
+  TLocale,
+  INavLink,
+  TProductType,
+  IAdditionalInfo,
+} from "@/types";
 
-export const locales: TLocale[] = ["uz", 'cyr', 'ru'];
+export const locales: TLocale[] = ["uz", "cyr", "ru"];
 
 export const socialData: ILink[] = [
   {
     icon: telegramIcon,
     link: "https://t.me/piyola_market",
-    text: "Telegram"
-  }, {
+    text: "Telegram",
+  },
+  {
     icon: instagramIcon,
     link: "https://www.instagram.com/piyola_market",
-    text: "Instagram"
-  }, {
+    text: "Instagram",
+  },
+  {
     icon: facebookIcon,
     link: "https://www.facebook.com",
-    text: "Facebook"
-  }, {
+    text: "Facebook",
+  },
+  {
     icon: youTubeIcon,
     link: "https://www.youTube.com",
-    text: "YouTube"
-  }
-]
+    text: "YouTube",
+  },
+];
 
 export const localesData: ISelectData<TLocale>[] = [
-  {value: "uz", label: "O'zbek"},
-  // {value: "ru", label: "Русский"},
-  // {value: "cyr", label: "Узбек"},
-]
+  { value: "uz", label: "O'zbek" },
+  { value: "ru", label: "Русский" },
+  { value: "en", label: "English" },
+];
 
-export const loadingMockData: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+export const loadingMockData: number[] = [
+  1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12,
+];
 
 export const motionVariants = {
-  initial: {opacity: 0, y: 25, scale: .95},
-  animate: {opacity: 1, y: 0, scale: 1},
-}
+  initial: { opacity: 0, y: 25, scale: 0.95 },
+  animate: { opacity: 1, y: 0, scale: 1 },
+};
 
 export const overlayVariants = {
   initial: {
@@ -75,40 +89,41 @@ export const overlayVariants = {
     opacity: 1,
     display: "flex",
     zIndex: 51,
-  }
-}
+  },
+};
 
 export const productStatusData: ISelectData<TProductType>[] = [
-  {label: 'Barchasi', value: 'ALL'},
-  {label: 'Yangi mahsulotlar', value: 'NEW'},
-  {label: 'B/U mahsulotlar', value: 'OLD'},
+  { label: "Barchasi", value: "ALL" },
+  { label: "Yangi mahsulotlar", value: "NEW" },
+  { label: "B/U mahsulotlar", value: "OLD" },
 ];
 
 export const navLinks: INavLink[] = [
   {
-    link: '/catalog',
+    link: "/catalog",
     text: "Katalog",
     icon: {
       filled: catalogFilledIcon,
       outline: catalogIcon,
-    }
+    },
   },
   {
-    link: '/',
+    link: "/",
     text: "Asosiy",
     icon: {
       filled: homeFilledIcon,
       outline: homeIcon,
-    }
-  }, {
-    link: '/liked',
+    },
+  },
+  {
+    link: "/liked",
     text: "Saqlangan",
     icon: {
       filled: heartFilledIcon,
       outline: heartIcon,
-    }
-  }
-]
+    },
+  },
+];
 
 export const additionalInfoData: IAdditionalInfo[] = [
   {
@@ -143,8 +158,9 @@ export const additionalInfoData: IAdditionalInfo[] = [
           Bo'lib to'lash imkoniyati mahsulotni xarid qilishni yanada qulay va oson qiladi.
           Mahsulotni hoziroq sotib olib, to'lovlarni kelgusida amalga oshiring!
         </p>
-    `
-  }, {
+    `,
+  },
+  {
     title: "Rasmiy kafolat",
     subtitle: "1 yil",
     icon: shieldIcon,
@@ -174,8 +190,9 @@ export const additionalInfoData: IAdditionalInfo[] = [
         Kafolat shartlari haqida qo'shimcha ma'lumot olish uchun bizning mijozlarga xizmat
         ko'rsatish markazimizga murojaat qiling.
       </p>
-    `
-  }, {
+    `,
+  },
+  {
     title: "Yetkazib berish xizmati",
     subtitle: "O'zbekiston bo'ylab bepul",
     icon: deliveryIcon,
@@ -200,9 +217,9 @@ export const additionalInfoData: IAdditionalInfo[] = [
         Yetkazib berish xizmati haqida qo'shimcha ma'lumot olish uchun bizning mijozlarga xizmat
         ko'rsatish markazimizga murojaat qiling.
       </p>
-    `
-  }
-]
+    `,
+  },
+];
 
 export const paymentMethods: StaticImageData[] = [
   anorBankIcon,
@@ -210,15 +227,15 @@ export const paymentMethods: StaticImageData[] = [
   clickIcon,
   humoIcon,
   uzCardIcon,
-  visaIcon
-]
+  visaIcon,
+];
 
-export const paymentTerms: number[] = [6, 12]
+export const paymentTerms: number[] = [6, 12];
 
 export const providerIcons: Record<TProvider, StaticImageData> = {
   ALIF: alifLogoIcon,
   UZUM: uzumLogoIcon,
-}
+};
 
 export const bannerData: StaticImageData[] = [
   bannerSixImg,
@@ -228,18 +245,18 @@ export const bannerData: StaticImageData[] = [
   bannerFourImg,
   bannerTwoImg,
   bannerFiveImg,
-]
+];
 
 export const regions = [
   {
     id: 1,
-    label: 'Andijon',
-    value: 'Andijon',
+    label: "Andijon",
+    value: "Andijon",
   },
   {
     id: 2,
-    label: 'Buxoro',
-    value: 'Buxoro',
+    label: "Buxoro",
+    value: "Buxoro",
   },
   {
     id: 3,
@@ -248,23 +265,23 @@ export const regions = [
   },
   {
     id: 4,
-    label: 'Jizzax',
-    value: 'Jizzax',
+    label: "Jizzax",
+    value: "Jizzax",
   },
   {
     id: 5,
-    label: 'Namangan',
-    value: 'Namangan',
+    label: "Namangan",
+    value: "Namangan",
   },
   {
     id: 6,
-    label: 'Navoiy',
-    value: 'Navoiy',
+    label: "Navoiy",
+    value: "Navoiy",
   },
   {
     id: 7,
-    label: 'Qashqadaryo',
-    value: 'Qashqadaryo',
+    label: "Qashqadaryo",
+    value: "Qashqadaryo",
   },
   {
     id: 8,
@@ -273,93 +290,93 @@ export const regions = [
   },
   {
     id: 9,
-    label: 'Samarqand',
-    value: 'Samarqand',
+    label: "Samarqand",
+    value: "Samarqand",
   },
   {
     id: 10,
-    label: 'Sirdaryo',
-    value: 'Sirdaryo',
+    label: "Sirdaryo",
+    value: "Sirdaryo",
   },
   {
     id: 11,
-    label: 'Surxondaryo',
-    value: 'Surkhandarya',
+    label: "Surxondaryo",
+    value: "Surkhandarya",
   },
   {
     id: 13,
-    label: 'Toshkent viloyati',
-    value: 'Toshkent viloyati',
+    label: "Toshkent viloyati",
+    value: "Toshkent viloyati",
   },
   {
     id: 12,
-    label: 'Toshkent shahri',
-    value: 'Toshkent shahri',
+    label: "Toshkent shahri",
+    value: "Toshkent shahri",
   },
   {
     id: 14,
-    label: 'Xorazm',
-    value: 'Xorazm',
+    label: "Xorazm",
+    value: "Xorazm",
   },
 ];
 export const subRegions = [
   {
-    id: 'Andijon',
+    id: "Andijon",
     subregion: [
       {
         id: 1,
-        label: 'PAXTAOBOD BTS',
-        value: 'PAXTAOBOD BTS',
+        label: "PAXTAOBOD BTS",
+        value: "PAXTAOBOD BTS",
       },
       {
         id: 2,
-        label: 'ANDIJON ESKI SHAHAR',
-        value: 'ANDIJON ESKI SHAHAR',
+        label: "ANDIJON ESKI SHAHAR",
+        value: "ANDIJON ESKI SHAHAR",
       },
       {
         id: 3,
-        label: 'IZBOSKAN',
-        value: 'IZBOSKAN',
+        label: "IZBOSKAN",
+        value: "IZBOSKAN",
       },
       {
         id: 4,
-        label: 'ASAKA BTS',
-        value: 'ASAKA BTS',
+        label: "ASAKA BTS",
+        value: "ASAKA BTS",
       },
       {
         id: 5,
-        label: 'SHAXRIXON BTS',
-        value: 'SHAXRIXON BTS',
+        label: "SHAXRIXON BTS",
+        value: "SHAXRIXON BTS",
       },
       {
         id: 6,
-        label: 'ANDIJON AVTOVOKZAL',
-        value: 'ANDIJON AVTOVOKZAL',
+        label: "ANDIJON AVTOVOKZAL",
+        value: "ANDIJON AVTOVOKZAL",
       },
     ],
   },
   {
-    id: 'Buxoro',
+    id: "Buxoro",
     subregion: [
       {
         id: 1,
-        label: 'BUXORO GORGAZ',
-        value: 'BUXORO GORGAZ',
+        label: "BUXORO GORGAZ",
+        value: "BUXORO GORGAZ",
       },
       {
         id: 2,
-        label: 'KOGON BTS',
-        value: 'KOGON BTS',
+        label: "KOGON BTS",
+        value: "KOGON BTS",
       },
       {
         id: 3,
-        label: 'BUXORO BTS',
-        value: 'BUXORO BTS',
+        label: "BUXORO BTS",
+        value: "BUXORO BTS",
       },
       {
         id: 4,
-        label: 'BUXORO 5-MKR',
-        value: 'BUXORO 5-MKR',
+        label: "BUXORO 5-MKR",
+        value: "BUXORO 5-MKR",
       },
     ],
   },
@@ -368,33 +385,33 @@ export const subRegions = [
     subregion: [
       {
         id: 1,
-        label: 'BESHARIQ BTS',
-        value: 'BESHARIQ BTS',
+        label: "BESHARIQ BTS",
+        value: "BESHARIQ BTS",
       },
       {
         id: 2,
-        label: 'QO`QON (CAVUM)',
-        value: 'QO`QON (CAVUM)',
+        label: "QO`QON (CAVUM)",
+        value: "QO`QON (CAVUM)",
       },
       {
         id: 3,
-        label: 'QO`QON BTS',
-        value: 'QO`QON BTS',
+        label: "QO`QON BTS",
+        value: "QO`QON BTS",
       },
       {
         id: 4,
-        label: 'QO`QON YANGI BOZOR',
-        value: 'QO`QON YANGI BOZOR',
+        label: "QO`QON YANGI BOZOR",
+        value: "QO`QON YANGI BOZOR",
       },
       {
         id: 5,
-        label: 'QUVASOY BTS',
-        value: 'QUVASOY BTS',
+        label: "QUVASOY BTS",
+        value: "QUVASOY BTS",
       },
       {
         id: 6,
-        label: 'TOSHLOQ',
-        value: 'TOSHLOQ',
+        label: "TOSHLOQ",
+        value: "TOSHLOQ",
       },
       {
         id: 7,
@@ -403,33 +420,33 @@ export const subRegions = [
       },
       {
         id: 8,
-        label: 'FARG`ONA BTS',
-        value: 'FARG`ONA BTS',
+        label: "FARG`ONA BTS",
+        value: "FARG`ONA BTS",
       },
     ],
   },
   {
-    id: 'Jizzax',
+    id: "Jizzax",
     subregion: [
       {
         id: 1,
-        label: 'JIZZAX',
-        value: 'JIZZAX',
+        label: "JIZZAX",
+        value: "JIZZAX",
       },
     ],
   },
   {
-    id: 'Namangan',
+    id: "Namangan",
     subregion: [
       {
         id: 1,
-        label: 'KOSONSOY BTS',
-        value: 'KOSONSOY BTS',
+        label: "KOSONSOY BTS",
+        value: "KOSONSOY BTS",
       },
       {
         id: 2,
-        label: 'CHUST BTS',
-        value: 'CHUST BTS',
+        label: "CHUST BTS",
+        value: "CHUST BTS",
       },
       {
         id: 3,
@@ -438,38 +455,38 @@ export const subRegions = [
       },
       {
         id: 4,
-        label: 'NAMANGAN BTS',
-        value: 'NAMANGAN BTS',
+        label: "NAMANGAN BTS",
+        value: "NAMANGAN BTS",
       },
     ],
   },
   {
-    id: 'Navoiy',
+    id: "Navoiy",
     subregion: [
       {
         id: 1,
-        label: 'NAVOI (VOSXOD)',
-        value: 'NAVOI (VOSXOD)',
+        label: "NAVOI (VOSXOD)",
+        value: "NAVOI (VOSXOD)",
       },
       {
         id: 2,
-        label: 'ZARAFSHON BTS',
-        value: 'ZARAFSHON BTS',
+        label: "ZARAFSHON BTS",
+        value: "ZARAFSHON BTS",
       },
       {
         id: 3,
-        label: 'NAVOI BTS',
-        value: 'NAVOI BTS',
+        label: "NAVOI BTS",
+        value: "NAVOI BTS",
       },
     ],
   },
   {
-    id: 'Qashqadaryo',
+    id: "Qashqadaryo",
     subregion: [
       {
         id: 1,
-        label: 'SHAHRISABZ BTS',
-        value: 'SHAHRISABZ BTS',
+        label: "SHAHRISABZ BTS",
+        value: "SHAHRISABZ BTS",
       },
       {
         id: 2,
@@ -478,8 +495,8 @@ export const subRegions = [
       },
       {
         id: 3,
-        label: 'KARSHI BTS',
-        value: 'KARSHI BTS',
+        label: "KARSHI BTS",
+        value: "KARSHI BTS",
       },
     ],
   },
@@ -488,8 +505,8 @@ export const subRegions = [
     subregion: [
       {
         id: 1,
-        label: 'NUKUS BTS',
-        value: 'NUKUS BTS',
+        label: "NUKUS BTS",
+        value: "NUKUS BTS",
       },
       {
         id: 2,
@@ -499,17 +516,17 @@ export const subRegions = [
     ],
   },
   {
-    id: 'Samarqand',
+    id: "Samarqand",
     subregion: [
       {
         id: 1,
-        label: 'JOMBOY BTS',
-        value: 'JOMBOY BTS',
+        label: "JOMBOY BTS",
+        value: "JOMBOY BTS",
       },
       {
         id: 2,
-        label: 'PAYARIQ BTS',
-        value: 'PAYARIQ BTS',
+        label: "PAYARIQ BTS",
+        value: "PAYARIQ BTS",
       },
       {
         id: 3,
@@ -518,113 +535,113 @@ export const subRegions = [
       },
       {
         id: 4,
-        label: 'URGUT BTS NEW',
-        value: 'URGUT BTS NEW',
+        label: "URGUT BTS NEW",
+        value: "URGUT BTS NEW",
       },
       {
         id: 5,
-        label: 'BULUNG`UR',
-        value: 'BULUNG`UR',
+        label: "BULUNG`UR",
+        value: "BULUNG`UR",
       },
       {
         id: 6,
-        label: 'SAMARKAND BTS',
-        value: 'SAMARKAND BTS',
+        label: "SAMARKAND BTS",
+        value: "SAMARKAND BTS",
       },
       {
         id: 7,
-        label: 'BTS DAHBET PVZ',
-        value: 'BTS DAHBET PVZ',
+        label: "BTS DAHBET PVZ",
+        value: "BTS DAHBET PVZ",
       },
       {
         id: 8,
-        label: 'SAMARKAND (M BARAKA)',
-        value: 'SAMARKAND (M BARAKA)',
+        label: "SAMARKAND (M BARAKA)",
+        value: "SAMARKAND (M BARAKA)",
       },
       {
         id: 9,
-        label: 'OQDARYO',
-        value: 'OQDARYO',
+        label: "OQDARYO",
+        value: "OQDARYO",
       },
     ],
   },
   {
-    id: 'Sirdaryo',
+    id: "Sirdaryo",
     subregion: [
       {
         id: 1,
-        label: 'GULISTON BTS',
-        value: 'GULISTON BTS',
+        label: "GULISTON BTS",
+        value: "GULISTON BTS",
       },
     ],
   },
   {
-    id: 'Surxondaryo',
+    id: "Surxondaryo",
     subregion: [
       {
         id: 1,
-        label: 'TERMEZ BTS',
-        value: 'TERMEZ BTS',
+        label: "TERMEZ BTS",
+        value: "TERMEZ BTS",
       },
       {
         id: 2,
-        label: 'DENOV BTS',
-        value: 'DENOV BTS',
+        label: "DENOV BTS",
+        value: "DENOV BTS",
       },
     ],
   },
   {
-    id: 'Toshkent shahri',
+    id: "Toshkent shahri",
     subregion: [
       {
         id: 1,
-        label: 'CHILONZOR',
-        value: 'CHILONZOR',
+        label: "CHILONZOR",
+        value: "CHILONZOR",
       },
       {
         id: 2,
-        label: 'QUSHBEGI BTS',
-        value: 'QUSHBEGI BTS',
+        label: "QUSHBEGI BTS",
+        value: "QUSHBEGI BTS",
       },
       {
         id: 3,
-        label: 'FARHOD BTS',
-        value: 'FARHOD BTS',
+        label: "FARHOD BTS",
+        value: "FARHOD BTS",
       },
       {
         id: 4,
-        label: 'YUNUSOBOD (UNIVERSAM)',
-        value: 'YUNUSOBOD (UNIVERSAM)',
+        label: "YUNUSOBOD (UNIVERSAM)",
+        value: "YUNUSOBOD (UNIVERSAM)",
       },
       {
         id: 5,
-        label: 'PARKENT BTS',
-        value: 'PARKENT BTS',
+        label: "PARKENT BTS",
+        value: "PARKENT BTS",
       },
       {
         id: 6,
-        label: 'SHAYXONTOHUR BTS',
-        value: 'SHAYXONTOHUR BTS',
+        label: "SHAYXONTOHUR BTS",
+        value: "SHAYXONTOHUR BTS",
       },
       {
         id: 7,
-        label: 'OLMAZOR BTS',
-        value: 'OLMAZOR BTS',
+        label: "OLMAZOR BTS",
+        value: "OLMAZOR BTS",
       },
       {
         id: 8,
-        label: 'ABU SAXIY',
-        value: 'ABU SAXIY',
+        label: "ABU SAXIY",
+        value: "ABU SAXIY",
       },
       {
         id: 9,
-        label: 'BEK BARAKA',
-        value: 'BEK BARAKA',
+        label: "BEK BARAKA",
+        value: "BEK BARAKA",
       },
       {
         id: 10,
-        label: 'MALIKA BOZOR',
-        value: 'MALIKA BOZOR',
+        label: "MALIKA BOZOR",
+        value: "MALIKA BOZOR",
       },
       {
         id: 11,
@@ -633,28 +650,28 @@ export const subRegions = [
       },
       {
         id: 12,
-        label: 'UCHTEPA BTS',
-        value: 'UCHTEPA BTS',
+        label: "UCHTEPA BTS",
+        value: "UCHTEPA BTS",
       },
       {
         id: 13,
-        label: 'YAKKASAROY BTS',
-        value: 'YAKKASAROY BTS',
+        label: "YAKKASAROY BTS",
+        value: "YAKKASAROY BTS",
       },
       {
         id: 14,
-        label: 'MIROBOD BTS',
-        value: 'MIROBOD BTS',
+        label: "MIROBOD BTS",
+        value: "MIROBOD BTS",
       },
       {
         id: 15,
-        label: 'SERGELI BTS',
-        value: 'SERGELI BTS',
+        label: "SERGELI BTS",
+        value: "SERGELI BTS",
       },
       {
         id: 16,
-        label: 'OQTEPA BTS',
-        value: 'OQTEPA BTS',
+        label: "OQTEPA BTS",
+        value: "OQTEPA BTS",
       },
       {
         id: 17,
@@ -663,48 +680,48 @@ export const subRegions = [
       },
       {
         id: 18,
-        label: 'MAKSIM GORKIY BTS',
-        value: 'MAKSIM GORKIY BTS',
+        label: "MAKSIM GORKIY BTS",
+        value: "MAKSIM GORKIY BTS",
       },
       {
         id: 19,
-        label: 'YUNUSOBOD (SHAXRISTON)',
-        value: 'YUNUSOBOD (SHAXRISTON)',
+        label: "YUNUSOBOD (SHAXRISTON)",
+        value: "YUNUSOBOD (SHAXRISTON)",
       },
     ],
   },
   {
-    id: 'Toshkent viloyati',
+    id: "Toshkent viloyati",
     subregion: [
       {
         id: 1,
-        label: 'ANGREN BTS',
-        value: 'ANGREN BTS',
+        label: "ANGREN BTS",
+        value: "ANGREN BTS",
       },
       {
         id: 2,
-        label: 'OLMALIQ BTS',
-        value: 'OLMALIQ BTS',
+        label: "OLMALIQ BTS",
+        value: "OLMALIQ BTS",
       },
       {
         id: 3,
-        label: 'CHIRCHIQ BTS',
-        value: 'CHIRCHIQ BTS',
+        label: "CHIRCHIQ BTS",
+        value: "CHIRCHIQ BTS",
       },
     ],
   },
   {
-    id: 'Xorazm',
+    id: "Xorazm",
     subregion: [
       {
         id: 1,
-        label: 'XIVA',
-        value: 'XIVA',
+        label: "XIVA",
+        value: "XIVA",
       },
       {
         id: 2,
-        label: 'URGENCH BTS',
-        value: 'URGENCH BTS',
+        label: "URGENCH BTS",
+        value: "URGENCH BTS",
       },
     ],
   },

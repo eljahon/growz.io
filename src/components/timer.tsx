@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { useTranslations } from "next-intl";
 
 interface CountdownProps {
   targetDate: string;
@@ -6,12 +7,14 @@ interface CountdownProps {
 
 interface TimeLeft {
   days: number;
-  hours: number | string
-  minutes: number | string
-  seconds: number | string
+  hours: number | string;
+  minutes: number | string;
+  seconds: number | string;
 }
 
 export default function CountdownTimer({ targetDate }: CountdownProps) {
+  const t = useTranslations();
+
   const calculateTimeLeft = (): TimeLeft => {
     const difference = new Date(targetDate).getTime() - new Date().getTime();
     let timeLeft: TimeLeft = { days: 0, hours: 0, minutes: 0, seconds: 0 };
@@ -45,25 +48,25 @@ export default function CountdownTimer({ targetDate }: CountdownProps) {
         <span className="text-2xl font-bold border-b-2 border-white pb-1 block">
           {timeLeft.days}
         </span>
-        <span className="block mt-1 text-base">kun</span>
+        <span className="block mt-1 text-base">{t("day")}</span>
       </div>
       <div className="bg-Clr007E text-white rounded-lg p-4 w-20 text-center">
         <span className="text-2xl font-bold border-b-2 border-white pb-1 block">
           {timeLeft.hours}
         </span>
-        <span className="block mt-1 text-base">soat</span>
+        <span className="block mt-1 text-base">{t("hour")}</span>
       </div>
       <div className="bg-Clr007E text-white rounded-lg p-4 w-20 text-center">
         <span className="text-2xl font-bold border-b-2 border-white pb-1 block">
           {timeLeft.minutes}
         </span>
-        <span className="block mt-1 text-base">minut</span>
+        <span className="block mt-1 text-base">{t("minute")}</span>
       </div>
       <div className="bg-Clr007E text-white rounded-lg p-4 w-20 text-center">
         <span className="text-2xl font-bold border-b-2 border-white pb-1 block">
           {timeLeft.seconds}
         </span>
-        <span className="block mt-1 text-base">sekund</span>
+        <span className="block mt-1 text-base">{t("second")}</span>
       </div>
     </div>
   );

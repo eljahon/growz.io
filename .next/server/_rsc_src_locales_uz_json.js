@@ -17,7 +17,7 @@ exports.modules = {
   \*****************************/
 /***/ ((module) => {
 
-module.exports = /*#__PURE__*/JSON.parse('{"greeting":"English"}');
+module.exports = /*#__PURE__*/JSON.parse('{"greeting":"English","title":"Veb-sayt qurilmoqda","text":"Biz ushbu veb-saytni yana mavjud qilish uchun qattiq ishlayapmiz. Growz haqida ko\'proq ma\'lumotni taqdimotdan olishingiz mumkin. Siz yangi dizaynni topasiz","presentation":"Presentatsiya","day":"Kun","hour":"Soat","minute":"Daqiqa","second":"Sekund"}');
 
 /***/ })
 
