@@ -1,12 +1,14 @@
 import Script from "next/script";
 import { Inter } from "next/font/google";
 import { NextIntlClientProvider, useMessages } from "next-intl";
-
+import {getMessages} from "next-intl/server";
 import { Providers } from "@/providers";
 import { BaseLayout } from "@/components";
 import { IChildren, IParams } from "@/types";
 
 import "@/styles/globals.scss";
+import { routing } from "@/routing";
+import { notFound } from "next/navigation";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -14,11 +16,15 @@ interface IRootLayout extends IChildren {
   params: IParams;
 }
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
   params: { locale },
 }: Readonly<IRootLayout>) {
-  const messages = useMessages();
+  const messages = await getMessages();
+  if (!routing.locales.includes(locale as any)) {
+    notFound();
+  }
+
 
   return (
     <html lang={locale}>

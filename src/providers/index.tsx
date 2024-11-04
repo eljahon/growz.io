@@ -3,7 +3,7 @@
 import { useLocale } from 'next-intl';
 import { FC, ReactNode } from 'react';
 
-import { getQueryClient } from '@/utils';
+// import { getQueryClient } from '@/utils';
 import { NextUIProvider } from '@nextui-org/react';
 
 interface IProvider {

@@ -9,4 +9,4 @@ export const {
 } = createSharedPathnamesNavigation({locales});
 
 export {BaseLayout} from './layout';
-export {LocaleSwitcher} from './locale-switcher';
+// export {LocaleSwitcher} from './locale-switcher';

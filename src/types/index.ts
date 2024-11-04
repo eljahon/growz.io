@@ -2,7 +2,7 @@
 import {ReactNode} from "react";
 import {StaticImageData} from "next/image";
 
-export type TLocale = "uz" | "ru" | "cyr";
+export type TLocale = "uz" | "en" | "ru";
 
 export interface IChildren {
   children: ReactNode;
@@ -15,7 +15,7 @@ export interface IParams {
 export interface ILocaleData {
   uz: string;
   ru: string;
-  cyr: string;
+  en: string;
 }
 
 // export interface IFetchingProps {

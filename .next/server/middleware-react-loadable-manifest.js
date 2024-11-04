@@ -1,1 +1,1 @@
-self.__REACT_LOADABLE_MANIFEST="{\"components\\\\main-page.tsx -> ./timer\":{\"id\":\"components\\\\main-page.tsx -> ./timer\",\"files\":[\"static/chunks/_app-pages-browser_src_components_timer_tsx.js\"]}}"
+self.__REACT_LOADABLE_MANIFEST='{"components/main-page.tsx -> ./timer":{"id":9092,"files":["static/chunks/92.f046ecf63066a3bc.js"]}}';
